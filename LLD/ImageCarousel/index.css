@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+   height: 800px;
+}
+.carousel-images {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    overflow: auto;
+    scroll-snap-type: x mandatory; 
+  }
+  
+  .carousel-image {
+    height: 400px;
+    width: 400px;
+    
+  }  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #333;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+   
+    width: 100px;
+    
+}
+.buttons>button{
+    cursor: pointer;
+}
