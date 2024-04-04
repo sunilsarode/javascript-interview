@@ -1,0 +1,24 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  padding: 1rem;
+  border: 1px solid;
+ 
+}
+
+ul{
+  width: 30%;
+  display: flex;
+  gap : 1rem;
+ 
+  list-style-type: none;
+}
+
+li{
+  cursor: pointer;
+  gap:8px
+}
