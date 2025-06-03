@@ -25,9 +25,10 @@ const p0=new Promise((resolve,reject)=>{
 const p1=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         reject('Error');
-    },100)
+    },600)
 });
 
+// return promise which resolve or reject first 
 promiseRace([p0,p1]).then((val)=>{
     console.log(val);
 })

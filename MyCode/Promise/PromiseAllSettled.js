@@ -45,4 +45,5 @@ const p1=new Promise((resolve,reject)=>{
 
 const p2=Promise.resolve(42);
 
+//if any promise fail,still we will have result in array along with error
 promiseAllSettled([p0,p1,p2]).then((val)=>console.log(val));

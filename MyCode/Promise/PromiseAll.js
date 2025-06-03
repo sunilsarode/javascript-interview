@@ -33,6 +33,7 @@ const p2=new Promise((resolve,reject)=>{
         },3000)
 })
 
+//will wait for all them to resolve and if any one of the promise fails,promiseAll will fail immediately 
 promiseAll([p0,p1,p2]).then(val=>console.log(val));
 
 async function myAsyncFunction() {
@@ -64,3 +65,4 @@ async function myFunction(){
         console.log(err);
     }
 }
+myFunction();

@@ -38,5 +38,5 @@ const p1=new Promise((resolve,reject)=>{
 })
 
 const p2=Promise.resolve(42);
-
-promiseAny([]).then((val)=>console.log(val));
+// wait for first successful resolve of promise and return it and if all fails, result will be array of aggregate error
+promiseAny([p0,p1,p2]).then((val)=>console.log(val));
